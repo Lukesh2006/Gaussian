@@ -8,13 +8,27 @@ To write a program to find the solution of a matrix using Gaussian Elimination.
 2. Anaconda – Python 3.7 Installation / Moodle-Code Runner
 
 ## Algorithm
-## Step 1: import numpy as np
-## Step 2: import sys
-## Step 3: get input from the user
-## Step 4: calculate the X0, X1 and X2 values by Gaussian elimination.
-## Step 5: print the values
-## Step 6: End the program
+```
+Step 1: Start the Program.
+Step 2: Import required libraries:
+numpy for array handling.
+sys to exit the program in case of divide-by-zero.
 
+Step 3: Input the Size and Augmented Matrix
+Read the number of unknowns n.
+
+Create an augmented matrix a of size n × (n+1) and a solution vector X of size n.
+Take user input to fill the augmented matrix a.
+
+Step 4: Forward Elimination
+For each pivot row i, check for divide-by-zero.
+
+For all rows below i, compute the ratio a[j][i]/a[i][i] and eliminate the coefficient below the pivot.
+
+Step 5: Solve the last variable directly.
+Step 6: Solve remaining variables using previously computed values.
+Step 7: Print the values of all unknowns.
+```
 ## Program:
 ```
 Program to solve a matrix using Gaussian elimination without partial pivoting.
